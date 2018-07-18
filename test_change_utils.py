@@ -11,7 +11,8 @@ from pysnow_change_epfl.change_utils import check_sciper, check_pwd, get_changel
 class TestChangeUtils(unittest.TestCase):
 
     def test_check_sciper(self):
-        del os.environ["SCIPER"]
+        if os.environ["SCIPER"] is not None:
+            del os.environ["SCIPER"]
         self.assertRaises(Exception, lambda: check_sciper())
         os.environ["SCIPER"] = "111s"
         self.assertRaises(Exception, lambda: check_sciper())
@@ -24,12 +25,13 @@ class TestChangeUtils(unittest.TestCase):
         os.environ["SCIPER"] = "123456"
 
     def test_check_pwd(self):
-        del os.environ["SNOW_CHG_PWD"]
+        if os.environ["SCIPER"] is not None:
+            del os.environ["SNOW_CHG_PWD"]
         self.assertRaises(Exception, lambda: check_pwd())
 
     def test_get_changelog_info(self):
         version_number, description, impact_category = get_changelog_info(
-            'test/test-CHANGELOG.md')
+            'test-CHANGELOG.md')
         self.assertEqual(version_number, "v2.0.1", 'incorrect version')
         self.assertEqual(description, "\n  - Rewrite code\n  - Move to " +
                          "david-dm (watching deps)\n\n",
