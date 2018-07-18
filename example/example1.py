@@ -5,8 +5,9 @@
 (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
 """
 
-from change_utils import check_sciper, check_pwd, get_changelog_info, \
-                         create_change
+from pysnow_change_epfl.change_utils import check_sciper, check_pwd, \
+                                            get_changelog_info, \
+                                            create_change
 
 # Verification before deployment
 try:
