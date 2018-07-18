@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://travis-ci.org/<path>">
-    <img alt="Travis Status" src="https://travis-ci.org/<path>.svg?branch=master">
+    <img alt="Travis Status" src="https://travis-ci.org/epfl-idevelop/pysnow-change.svg?branch=master">
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-people-api/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
@@ -25,7 +25,7 @@ Usage
 -----
 1. Create a environment variable 'SCIPER' with your Sciper number (ex: SCIPER=123456)
 2. Create a environment variable 'SNOW_CHG_PWD' with the password of user 'idevelop_webservice'  
-3. **Implementation:** Check in example/example1.py
+3. See an implementation example in example/example1.py
 
 Contributing
 ------------
