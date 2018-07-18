@@ -17,7 +17,7 @@ setup(
     author='Olivier Bieler',
     author_email='olivier.bieler@epfl.ch',
 
-    license="Apache License 2.0"
+    license="Apache License 2.0",
     install_requires=[
         'requests==2.18.4',
         'lxml==3.7.3',
