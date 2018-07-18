@@ -11,7 +11,7 @@ from pysnow_change_epfl.change_utils import check_sciper, check_pwd, get_changel
 class TestChangeUtils(unittest.TestCase):
 
     def test_check_sciper(self):
-        if os.environ["SCIPER"] is not None:
+        if os.environ.get("SCIPER") is not None:
             del os.environ["SCIPER"]
         self.assertRaises(Exception, lambda: check_sciper())
         os.environ["SCIPER"] = "111s"
@@ -25,7 +25,7 @@ class TestChangeUtils(unittest.TestCase):
         os.environ["SCIPER"] = "123456"
 
     def test_check_pwd(self):
-        if os.environ["SCIPER"] is not None:
+        if os.environ.get("SNOW_CHG_PWD") is not None:
             del os.environ["SNOW_CHG_PWD"]
         self.assertRaises(Exception, lambda: check_pwd())
 
