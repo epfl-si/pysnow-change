@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/<path>">
+  <a href="https://travis-ci.org/epfl-idevelop/pysnow-change">
     <img alt="Travis Status" src="https://travis-ci.org/epfl-idevelop/pysnow-change.svg?branch=master">
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-people-api/master/LICENSE">
