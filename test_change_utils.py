@@ -5,7 +5,8 @@
 """
 import unittest
 import os
-from pysnow_change_epfl.change_utils import check_sciper, check_pwd, get_changelog_info
+from pysnow_change_epfl.change_utils import check_sciper, check_pwd, \
+                                            get_changelog_info
 
 
 class TestChangeUtils(unittest.TestCase):
