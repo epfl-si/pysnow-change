@@ -5,4 +5,5 @@ python:
   - "2.7"
 
 script:
+  - flake8 *.py
   - python test_change_utils.py
