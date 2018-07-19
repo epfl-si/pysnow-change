@@ -60,8 +60,6 @@ def get_changelog_info(CHANGELOG_path):
 
 def create_change(service_id, snow_group, impact_category,
                   short_description, description):
-    print "create_change.."
-
     sciper = os.environ.get('SCIPER')
     password_ws_idevelop = os.environ.get('SNOW_CHG_PWD')
 
