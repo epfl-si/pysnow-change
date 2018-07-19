@@ -9,7 +9,7 @@ from pysnow_change_epfl.change_utils import check_sciper, check_pwd, \
                                             get_changelog_info, \
                                             create_change
 
-# Verification before deployment
+# Verification before create change
 try:
     check_sciper()
     check_pwd()
@@ -18,9 +18,6 @@ try:
 except Exception as exc:
     print exc
     exit(1)
-
-# Deploy app
-# ...
 
 # Create change
 print create_change(service_id='SVC0016',
