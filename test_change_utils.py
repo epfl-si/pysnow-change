@@ -34,7 +34,7 @@ class TestChangeUtils(unittest.TestCase):
         version_number, description, impact_category = get_changelog_info(
             'test-CHANGELOG.md')
         self.assertEqual(version_number, "v2.0.1", 'incorrect version')
-        self.assertEqual(description, "\n  - Rewrite code\n  - Move to " +
+        self.assertEqual(description, "\n- Rewrite code\n- Move to " +
                          "david-dm (watching deps)\n\n",
                          'incorrect description')
         self.assertEqual(impact_category, "Minor", 'incorrect impact category')

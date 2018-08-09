@@ -45,8 +45,7 @@ def get_changelog_info(CHANGELOG_path):
                 info_version = re.findall("([0-9]+)", line)
                 version_found = True
             elif version_found:
-                description = description + line
-
+                description = description + line.lstrip(" ")
     impact_category = 'Minor'
     if info_version[0] != info_previous_version[0]:
         impact_category = 'Major'
