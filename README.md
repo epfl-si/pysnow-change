@@ -18,7 +18,7 @@ Install
 -------
 
 ```bash
-$ pip install pysnow-change-epfl
+$ pip install git+https://github.com/epfl-idevelop/pysnow-change.git
 ```
 
 Usage
