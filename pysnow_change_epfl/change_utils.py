@@ -115,4 +115,10 @@ def create_change(service_id, snow_group, impact_category,
         u_work_start
     )
 
-    return result
+    if result.status == 'inserted':
+        return "Change created and closed.\n" \
+            "Number: {0}\nURL: https://it-test.epfl.ch/backoffice/nav_to.do?" \
+            "uri=change_request.do?sys_id={1}" \
+            .format(result.display_value, result.sys_id)
+    else:
+        return "Error: {}".format(result.error_message)
