@@ -23,8 +23,8 @@ $ pip install git+https://github.com/epfl-idevelop/pysnow-change.git
 
 Usage
 -----
-1. Create a environment variable 'SCIPER' with your Sciper number (ex: SCIPER=123456)
-2. Create a environment variable 'SNOW_CHG_PWD' with the password of user 'idevelop_webservice'  
+1. Create a environment variable **'SCIPER'** with your Sciper number (ex: SCIPER=123456)
+2. Create a environment variable **'SNOW_CHG_PWD'** with the password of user idevelop_webservice'  
 3. See an implementation example in example/example1.py
 
 Contributing
