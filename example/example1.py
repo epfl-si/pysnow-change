@@ -13,6 +13,9 @@ from pysnow_change_epfl.change_utils import check_sciper, check_pwd, \
 try:
     check_sciper()
     check_pwd()
+    # ** Warning: To use the get_changelog_info(..) util function below,
+    # the format of version titles in the CHANGELOG file should start
+    # with ### and the version number X.Y.Z should precede the date! **
     version_number, description, impact_category = get_changelog_info(
         '<path_to_CHANGELOG.md>')
 except Exception as exc:
