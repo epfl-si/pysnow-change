@@ -7,7 +7,7 @@
   <a href="https://travis-ci.org/epfl-idevelop/pysnow-change">
     <img alt="Travis Status" src="https://travis-ci.org/epfl-idevelop/pysnow-change.svg?branch=master">
   </a>
-  <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-people-api/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/epfl-idevelop/pysnow-change/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
 </p>
@@ -16,7 +16,7 @@
 
 Description
 -----------
-This tool offer the possibility to create a **Standard Change** in the ServiceNow of the EPFL with a unique command. This change is create directly closed.
+This tool offer the possibility to create a **Standard Change** in the ServiceNow of the EPFL with a unique command. This change is created directly closed.
 It could be used for every new deployment in production, unless the change need an approval by the Management (which in this case must be done manually one week in advance).  
 
 ##### Details
@@ -33,8 +33,8 @@ $ pip install git+https://github.com/epfl-idevelop/pysnow-change.git
 
 Usage
 -----
-1. Create a environment variable **'SCIPER'** with your Sciper number (ex: SCIPER=123456)  
-2. Create a environment variable **'SNOW_CHG_PWD'** with the password of user 'idevelop_webservice'  
+1. Create an environment variable **'SCIPER'** with your Sciper number (ex: SCIPER=123456)
+2. Create an environment variable **'SNOW_CHG_PWD'** with the password of user 'idevelop_webservice'
 3. See an implementation example in example/example1.py
 
 API
@@ -49,7 +49,7 @@ API
 | snow_group        | String | yes      | Assignement group                       | &lt;All existing assignable group&gt; | 'SI_NEWS'                                      |
 | impact_category   | String | yes      | Impact                                  | 'Minor', 'Significant' or 'Major'     | 'Minor'                                        |
 | short_description | String | yes      | Short description (title of the change) | &lt;free text&gt;                     | 'Actu - v1.4.3'                                |
-| description       | String | yes      | Decsription (list of changes)           | &lt;free text&gt;                     | '- Fix unit test<br>- Update depedencies'      |
+| description       | String | yes      | Description (list of changes)           | &lt;free text&gt;                     | '- Fix unit test<br>- Update dependencies'     |
 
 **Return value:**  
 A string who contains a confirmation message with the Change Number and URL or an error message.
