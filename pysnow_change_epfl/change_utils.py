@@ -58,7 +58,12 @@ def get_changelog_info(CHANGELOG_path):
 
 
 def create_change(service_id, snow_group, impact_category,
-                  short_description, description):
+                  short_description, description, env='test'):
+
+    host = 'support-test.epfl.ch'
+    if env == 'prod':
+        host = 'support.epfl.ch'
+
     sciper = os.environ.get('SCIPER')
     password_ws_idevelop = os.environ.get('SNOW_CHG_PWD')
 
@@ -90,7 +95,7 @@ def create_change(service_id, snow_group, impact_category,
     transport_with_basic_auth = Transport(session=session)
 
     client = Client(
-        wsdl='https://epfltest.service-now.com/u_epfl_change_log.do?wsdl',
+        wsdl='https://{}/u_epfl_change_log.do?wsdl'.format(host),
         transport=transport_with_basic_auth
     )
 
@@ -116,8 +121,8 @@ def create_change(service_id, snow_group, impact_category,
 
     if result.status == 'inserted':
         return "Change created and closed.\n" \
-            "Number: {0}\nURL: https://it-test.epfl.ch/backoffice/nav_to.do?" \
-            "uri=change_request.do?sys_id={1}" \
-            .format(result.display_value, result.sys_id)
+            "Number: {0}\nURL: https://{1}/backoffice/nav_to.do?" \
+            "uri=change_request.do?sys_id={2}" \
+            .format(result.display_value, host, result.sys_id)
     else:
         return "Error: {}".format(result.error_message)

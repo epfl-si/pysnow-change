@@ -43,13 +43,14 @@ API
 
 **Parameters:**
 
-| Name              | Type   | Required | Description                             | Possible values                       | Example                                        |
-|-------------------|--------|----------|-----------------------------------------|---------------------------------------|------------------------------------------------|
-| service_id        | String | yes      | Business Service ID                     | &lt;All existing Business Service&gt; | 'SVC0016'                                      |
-| snow_group        | String | yes      | Assignement group                       | &lt;All existing assignable group&gt; | 'SI_NEWS'                                      |
-| impact_category   | String | yes      | Impact                                  | 'Minor', 'Significant' or 'Major'     | 'Minor'                                        |
-| short_description | String | yes      | Short description (title of the change) | &lt;free text&gt;                     | 'Actu - v1.4.3'                                |
-| description       | String | yes      | Description (list of changes)           | &lt;free text&gt;                     | '- Fix unit test<br>- Update dependencies'     |
+| Name              | Type   | Required            | Description                             | Possible values                       | Example                                      |
+|-------------------|--------|---------------------|-----------------------------------------|---------------------------------------|----------------------------------------------|
+| service_id        | String | yes                 | Business Service ID                     | &lt;All existing Business Service&gt; | 'SVC0016'                                    |
+| snow_group        | String | yes                 | Assignement group                       | &lt;All existing assignable group&gt; | 'SI_NEWS'                                    |
+| impact_category   | String | yes                 | Impact                                  | 'Minor', 'Significant' or 'Major'     | 'Minor'                                      |
+| short_description | String | yes                 | Short description (title of the change) | &lt;free text&gt;                     | 'Actu - v1.4.3'                              |
+| description       | String | yes                 | Description (list of changes)           | &lt;free text&gt;                     | '- Fix unit test<br>- Update dependencies'   |
+| env               | String | no (default:'test') | ServiceNow environment                  | 'test', 'prod'                        | 'prod'                                       |
 
 **Return value:**  
 A string who contains a confirmation message with the Change Number and URL or an error message.
