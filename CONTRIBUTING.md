@@ -17,6 +17,13 @@ Unit and integration tests:
 python test_change_utils.py
 ```
 
+Release
+-------
+
+  1. Update the file [CHANGELOG.md](CHANGELOG.md)
+  2. Update the version in the file [\__init__.py](pysnow_change_epfl/__init__.py)
+  3. Create the tag (``git tag -a <version> -m "Version <version>"``)
+
 License
 -------
 
