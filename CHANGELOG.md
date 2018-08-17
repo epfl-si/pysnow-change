@@ -1,5 +1,5 @@
-EPFL Example Changelog
-======================
+Changelog
+=========
 
 ### v1.0.0 / 2018-08-14
 
