@@ -1,6 +1,15 @@
 Changelog
 =========
 
+### v1.1.0 / 2018-08-17
+
+  - Publish package in pypi.org
+  - Improve example
+  - Update CONTRIBUTING.md
+  - Fix shebang in example
+  - Fix package description in markdown (pypi.org)
+  - Fix CHANGELOG.md title
+
 ### v1.0.0 / 2018-08-14
 
   - Add production host
