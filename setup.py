@@ -11,6 +11,7 @@ setup(
     version=__import__('pysnow_change_epfl').__version__,
     description='ServiceNow change creation tool for EPFL-IDevelop',
     long_description=open('README.md', 'r').read(),
+    long_description_content_type='text/markdown',
 
     url='https://github.com/epfl-idevelop/pysnow-change',
 
