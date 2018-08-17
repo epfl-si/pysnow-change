@@ -60,10 +60,11 @@ Contributing
 ------------
 Contributions are welcome.
 
-Developer
----------
+Developers
+----------
 
   * [Olivier Bieler](https://github.com/obieler)
+  * [William Belle](https://github.com/williambelle)
 
 License
 -------
