@@ -26,7 +26,7 @@ Release
   4. Publish in [pypi.org](https://pypi.org/project/pysnow-change-epfl/):
 ```
 python3 setup.py sdist bdist_wheel
-twine upload --repository-url https://pypi.org/legacy/ dist/*
+twine upload dist/*
 ```
 
 License
