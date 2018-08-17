@@ -18,6 +18,13 @@ try:
     # with ### and the version number X.Y.Z should precede the date! **
     version_number, description, impact_category = get_changelog_info(
         '<path_to_CHANGELOG.md>')
+    print "Version: {}".format(version_number)
+    print "List of changes: \n{}".format(description)
+    rep = raw_input(
+        "Is the version and description correct? [type 'yes' to confirm] : ")
+    if rep != 'yes':
+        print "create change canceled."
+        exit(1)
 except Exception as exc:
     print exc
     exit(1)
