@@ -10,6 +10,9 @@
   <a href="https://raw.githubusercontent.com/epfl-idevelop/pysnow-change/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
+  <a href="https://pypi.org/project/pysnow-change-epfl/">
+    <img alt="PyPI Version" src="https://img.shields.io/pypi/v/pysnow-change-epfl.svg">
+  </a>
 </p>
 
 ---
