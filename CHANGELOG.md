@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v1.1.3 / 2019-06-14
+
+  - Fix flake8
+
 ### v1.1.2 / 2019-06-14
 
   - Fix publish to pypi
