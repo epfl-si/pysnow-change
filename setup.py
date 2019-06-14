@@ -1,16 +1,21 @@
 # -*- coding:utf-8 -*-
 
 """
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
+(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018-2019.
 """
 
 from setuptools import setup
+from os import path
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='pysnow_change_epfl',
     version=__import__('pysnow_change_epfl').__version__,
     description='ServiceNow change creation tool for EPFL-IDevelop',
-    long_description=open('README.md', 'r').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
 
     url='https://github.com/epfl-idevelop/pysnow-change',
