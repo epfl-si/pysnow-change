@@ -20,7 +20,7 @@ setup(
 
     license="Apache License 2.0",
     install_requires=[
-        'requests==2.18.4',
+        'requests==2.21.0',
         'lxml==3.7.3',
         'zeep==2.5.0',
     ],
