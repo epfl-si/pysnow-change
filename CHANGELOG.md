@@ -1,11 +1,15 @@
 Changelog
 =========
 
+### v1.1.2 / 2019-06-14
+
+  - Fix publish to pypi
+
 ### v1.1.1 / 2019-06-14
 
   - Update dependency (requests)
   - Improve README (pypi badge)
-  
+
 ### v1.1.0 / 2018-08-17
 
   - Publish package in pypi.org
