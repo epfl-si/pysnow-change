@@ -26,9 +26,9 @@ setup(
 
     license="Apache License 2.0",
     install_requires=[
-        'requests==2.21.0',
-        'lxml==3.7.3',
-        'zeep==2.5.0',
+        'requests>=2.21.0,<3.0',
+        'lxml>=3.7.3,<4.0',
+        'zeep>=2.5.0,<3.0',
     ],
     packages=['pysnow_change_epfl'],
     zip_safe=False
