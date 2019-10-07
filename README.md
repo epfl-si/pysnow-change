@@ -69,11 +69,16 @@ Developers
   * [Olivier Bieler](https://github.com/obieler)
   * [William Belle](https://github.com/williambelle)
 
+Contributors
+------------
+
+  * [Christian Clauss](https://github.com/cclauss)
+
 License
 -------
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
+(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018-2019.
 
 See the [LICENSE](LICENSE) file for more details.

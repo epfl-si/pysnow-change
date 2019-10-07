@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.0 / 2019-10-07
+
+  - Add Python 3 compatibility
+  - Extend requirements version
+
 ### v1.1.3 / 2019-06-14
 
   - Fix flake8

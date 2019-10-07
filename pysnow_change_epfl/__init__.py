@@ -3,4 +3,4 @@
     Switzerland, VPSI, 2018-2019
 """
 
-__version__ = '1.1.3'
+__version__ = '2.0.0'
