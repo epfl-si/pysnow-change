@@ -2,11 +2,12 @@ language: python
 
 python:
   - "2.7"
+  - "3.6"
 
 install:
   - "pip install ."
   - "pip install flake8"
 
 script:
-  - flake8 *.py
+  - flake8 .
   - python test_change_utils.py
