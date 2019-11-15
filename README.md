@@ -17,6 +17,8 @@
 
 ---
 
+### :warning: The web service for the change in ServiceNow of EPFL is no longer available since 14th of November, 2019. So I archive the repository.
+
 Description
 -----------
 This tool offer the possibility to create a **Standard Change** in the ServiceNow of the EPFL with a unique command. This change is created directly closed.
